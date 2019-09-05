@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    
+    <head>
+        <title>Flight search</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+</style>
+    </head>
+    <body>
+        <h1>Search Flight</h1>
+        <label>Trip type:</label><br>
+        <input type="radio" name="trip" value="return"> Return<br>
+        <input type="radio" name="trip" value="oneway"> One-way<br>
+        
+        <label>From:</label>
+        <input type="text" name="departure">
+        <br>
+        <label>To:</label>
+        <input type="text" name="arrival">
+        <br>
+        <label>Depart:</label>
+        <input type="date" name="depart">
+        <br>
+        <br>
+        <label>Class:</label>
+        <select>
+            <option value="economy">Economy</option>
+            <option value="first">First</option>
+            <option value="business">Business</option>
+        </select>
+        <br>
+        <br>
+        <label>Adults:</label>
+        <select>
+            <option value="a1">1</option>
+            <option value="a2">2</option>
+            <option value="a3">3</option>
+            <option value="a4">4</option>
+            <option value="a5">5</option>
+            <option value="a6">6</option>
+            <option value="a7">7</option>
+            <option value="a8">8</option>
+            <option value="a9">9</option>
+        </select>
+        <label>Children:</label>
+        <select>
+            <option value="c0">0</option>
+            <option value="c1">1</option>
+            <option value="c2">2</option>
+            <option value="c3">3</option>
+            <option value="c4">4</option>
+            <option value="c5">5</option>
+            <option value="c6">6</option>
+            <option value="c7">7</option>
+            <option value="c8">8</option>
+        </select>
+        <label>Infant:</label>
+        <select>
+            <option value="c0">0</option>
+            <option value="c1">1</option>
+        </select>
+        <br>
+        <button type="button">Search</button>
+    </body>
+</html>
